@@ -1,36 +1,87 @@
-// Grand Central Station
-
 @import 'google-homepage';
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import 'animate';
 
+svg, p{
+  position: absolute;
+}
 
-// First Frame
-img {
+#stache{
+   animation: shake 1s 1.8s infinite; 
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+.taco{
+  width:180px;
+  height:180px;
+  left:320px;
+  top:0px;
+  transform:rotate(15deg);
+  animation:slideInLeft 1.8s;
+}
+
+.truck{
+  animation: slideInLeft 1.5s;
+  height:200px;
+  width:360px;
+  left:250px;
+  top:130px;
+}
+
+.hat{
+  top:-75px;
+  width:100px;
+  left:330px;
+  transform: translateY(-3000px);
+  animation: bounceInDown 1s 1.8s;
+  animation-fill-mode: forwards;
+}
+
+p{
+ font-family: 'Sacramento', cursive;
+ color:white;
+}
+
+.tuesday{
+    bottom:0;
+    height:90px;
+    left:40px;
+}
+
+#logo{
+  animation: slideInLeft 1.5s;
+  font-size:58px;
+  left:360px;
+  top:160px;
+}
+
+#banner{
+ left:300px;
+ bottom:-20px;
+ font-size:36px;  
+}
+
+.char1{
+    color:red;
     
-    opacity: .5;
-    transform: scale(.25) rotate(0);
-    width: 40%;
-    
-    transition: transform .5s;
 }
 
-// Last Frame
-img:hover {
-    opacity: 1;
-    transform: scale(1.5) rotate(180deg);
-}
 
-// First Frame
-.line {
-     fill:none;
-     stroke:#8cff19;
-     stroke-width:30;
-     stroke-miterlimit:10;
-    
-    transition: stroke 1s;
-}
 
-// Last Frame
-.line:hover {
-    stroke: red;
-}
+
+
+
 
