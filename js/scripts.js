@@ -11,3 +11,9 @@ console.log(numRand);
 // Display randomized images
 $('#random').attr( 'src', eval('img' + numRand) );
 
+
+console.log('Test');
+
+$('#banner').arctext({radius: 700, dir: -1});
+
+$('#logo').lettering();

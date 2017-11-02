@@ -7,10 +7,10 @@ svg, p{
 }
 
 #stache{
-   animation: shake 1s 1.8s infinite; 
+   animation: wiggle 1s 1.8s infinite; 
 }
 
-@keyframes shake {
+@keyframes wiggle {
   from, to {
     transform: translate3d(0, 0, 0);
   }
@@ -52,7 +52,6 @@ svg, p{
 
 p{
  font-family: 'Sacramento', cursive;
- color:white;
 }
 
 .tuesday{
@@ -68,15 +67,28 @@ p{
   top:160px;
 }
 
-#banner{
- left:300px;
- bottom:-20px;
- font-size:36px;  
+#logo .char2, .char6{
+    color:#eb5b50;
 }
 
-.char1{
-    color:red;
-    
+#logo .char1, .char4{
+    color:#4285f4;
+}
+
+#logo .char5{
+    color:#0f9d58
+}
+
+#logo .char3{
+    color:#f4b400;
+}
+
+
+#banner{
+ color:white;
+ left:300px;
+ bottom:-30px;
+ font-size:36px;  
 }
 
 
